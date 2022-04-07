@@ -1,0 +1,47 @@
+@media screen and (max-width: 767.5px) {
+  .header__button {
+    padding: 0;
+    border: 0;
+
+    margin-left: auto;
+    background-color: transparent;
+    overflow-y: scroll, hidden;
+  }
+
+  .header__button.is-open {
+    position: fixed;
+    z-index: 2;
+    top: 10px;
+    right: 15px;
+
+    overflow-y: scroll;
+  }
+
+  .header__nav-main {
+  }
+
+  svg:hover,
+  svg:focus {
+    fill: var(--akcent-color);
+  }
+
+  .header__ico-cross {
+    display: none;
+  }
+
+  .is-open .header__ico-cross {
+    display: block;
+  }
+
+  .is-open .header__icomenu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767.5px) {
+  .header__button {
+    display: none;
+  }
+}
+
+@import "./mob-menu";

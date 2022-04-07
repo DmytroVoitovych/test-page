@@ -1,0 +1,70 @@
+@media screen and (max-width: 480px) {
+  .backdrop {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 1199.5px) {
+  .backdrop__order-form {
+    max-width: 370px;
+    // width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .backdrop__order-form {
+    margin: 0;
+    // width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199.5px) {
+  .backdrop__zakaz {
+    max-width: 450px;
+    width: 100%;
+    height: 609px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .backdrop__zakaz {
+    position: relative;
+    max-width: 450px;
+    width: auto;
+    padding: 40px;
+    // width: 100%;
+    // height: 609px;
+  }
+
+  .backdrop__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1199.5px) {
+  .backdrop__input-order {
+    max-width: 370px;
+    width: 100%;
+  }
+
+  li:last-child .backdrop__input-order {
+    max-width: 370px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199.5px) {
+  .backdrop__accept {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .backdrop__accept a {
+    display: inline-flex;
+  }
+}

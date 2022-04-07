@@ -1,0 +1,97 @@
+.backdrop__accept {
+  display: inline-block;
+  /* display: inline-flex;
+  justify-content: center;
+  align-items: center; */
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+
+  // оформление кастомного подкресливания
+  a {
+    position: relative;
+    color: var(--akcent-color);
+    text-decoration: none;
+  }
+
+  a > span {
+    position: absolute;
+    width: 100%;
+    /* bottom: 23%; */
+    bottom: 10%;
+    left: 0;
+    border-bottom: 1px solid var(--akcent-color);
+  }
+}
+
+.backdrop__order-button {
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 55px 10px 56px;
+  border: none;
+  color: var(--white-color);
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background-color: var(--akcent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* кастомное оформление чекбокса */
+.backdrop__accept [type="checkbox"] {
+  appearance: none;
+}
+
+.backdrop__icon-yes {
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  @include centerFlex(inline-flex);
+  padding: 4px 2px 3px 3px;
+  background-color: var(--white-color);
+  border-radius: 2px;
+  border: 2px solid #212121;
+  background-origin: border-box;
+  transition: background-color var(--kubik), border var(--kubik);
+}
+
+.backdrop__accept [type="checkbox"]:checked + .backdrop__icon-yes {
+  background-color: var(--akcent-color);
+  border: var(--akcent-color);
+}
+
+/* оформление по репете */
+
+/* .accept [type="checkbox"] {
+  appearance: none;
+}
+
+.icon-yes {
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 4px 2px 3px 3px; */
+/* background-color: var(--white-color); */
+/* border-radius: 2px;
+  border: 2px solid #212121;
+  fill: currentColor;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accept [type="checkbox"]:checked + .icon-yes {
+  background-color: var(--akcent-color);
+  border: var(--akcent-color);
+  fill: var(--white-color);
+} */

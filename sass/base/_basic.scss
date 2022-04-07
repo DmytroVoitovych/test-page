@@ -1,0 +1,83 @@
+body {
+  // position: relative; 
+  background-color: #ffffff;
+  color: #212121;
+  font-family: Roboto, sans-serif;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+/* 
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: ;
+}
+ */
+
+/* .is-hidden {
+  opacity: 0;
+  z-index: 0;
+} */
+
+/*оформляем шапку  */
+/* логотип */
+
+.container-h {
+  // width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) and (max-width: 767.5px) {
+    width: 480px;
+    // width: 100%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.container {
+  // width: 1200px;
+  // width: 100%;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 479px) {
+    // max-width: 479px;
+    width: 100%;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767.5px) {
+    width: 480px;
+    // width: 100%;
+  }
+
+   @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+     width: 768px;
+   }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}

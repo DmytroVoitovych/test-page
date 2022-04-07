@@ -1,0 +1,52 @@
+/* начинаю оформлять секцию о занятиях компании */
+.title-section {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.makes {
+  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199.5px) {
+    display: none;
+  }
+}
+
+.makes__list-img {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+
+  .makes__item-img:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+/* начинаю делать подписи изображений */
+
+.makes__desc-doit {
+  position: relative;
+  width: 370px;
+
+  .makes__doit-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}

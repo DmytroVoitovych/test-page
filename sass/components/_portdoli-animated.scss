@@ -1,0 +1,39 @@
+.portfolio__move-up {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio__desc-card {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  margin: 0;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  letter-spacing: 0.03em;
+  transition: transform var(--kubik),
+  opacity var(--kubik);
+ 
+  /* overflow: hidden; */
+  opacity: 0;
+}
+
+.portfolio__item:hover .portfolio__desc-card,
+.portfolio__item:focus .portfolio__desc-card {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform var(--kubik),
+  opacity var(--kubik);
+}
+
+@media screen and (max-width: 400px){
+  .portfolio__desc-card{
+    padding: 2px;
+    text-align:center;
+  }
+}

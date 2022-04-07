@@ -1,0 +1,120 @@
+/* Начинаю оформлять внутрению секцию постоянных клиентов */
+.client-often {
+  /* background: var(--white-color); */
+  @extend %basic-padding;
+
+  @media screen and (max-width: 1199.5px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.client-often__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199.5px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    
+  }
+}
+/* секция постоянных клиентов */
+.client-often__list {
+  display: flex;
+  @extend %reset-style;
+  justify-content: space-between;
+
+  @media screen and (min-width: 480px) and (max-width: 767.5px) {
+    justify-content: center;
+    flex-wrap: wrap;
+    // flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+    margin: -15px;
+    flex-wrap: wrap;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width:1199.5px) {
+    justify-content: center;
+    margin: -15px;
+    flex-wrap: wrap;
+  }
+
+}
+
+.client-often__icon {
+  @include centerFlex();
+  text-align: center;
+  list-style: none;
+  // width: 170px;
+  // height: 92px;
+
+  @media screen and (max-width: 480px) {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 768px) and (max-width:1199.5px) {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+    
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 767.5px) {
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(-n + 4) {
+      margin-bottom: 30px;
+    }
+  }
+
+  a {
+    @include centerFlex();
+    // max-width: 210px;
+    width: 170px;
+    height: 92px;
+    fill: #afb1b8;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    transition: border var(--kubik), fill var(--kubik);
+
+    @media screen and (max-width: 480px) {
+      // max-width: 210px;
+      width: 100%;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 767.5px) {
+      width: 210px;
+      // width: 100%;
+      // width: 100%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width:1199.5px) {
+      width: 226px;
+      
+
+    }
+  }
+
+  a:hover,
+  a:focus {
+    fill: var(--akcent-color);
+    stroke: transparent;
+    border: 1px solid var(--akcent-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .client-svg {
+  }
+}
